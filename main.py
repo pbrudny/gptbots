@@ -8,7 +8,7 @@ page = """
 A value: <|{value}|>.
 
 A slider: <br />
-<|slider|>
+<|{value}|slider|>
 """
 
 Gui(page=page).run()
