@@ -1,5 +1,14 @@
 from taipy import Gui
 
-var_name = 'Piotr'
+value = 10
 
-Gui(page="Hi <|{var_name}|>").run(dark_mode=False)
+page = """
+#This is *Taipy* GUI
+
+A value: <|{value}|>.
+
+A slider: <br />
+<|slider|>
+"""
+
+Gui(page=page).run()
