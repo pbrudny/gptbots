@@ -1,3 +1,5 @@
 from taipy import Gui
 
-Gui(page=" I love *Taipy*").run(dark_mode=True)
+var_name = 'Piotr'
+
+Gui(page="Hi <|{var_name}|>").run(dark_mode=False)
